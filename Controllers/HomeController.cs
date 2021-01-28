@@ -85,7 +85,7 @@ namespace Assignment2.Controllers
 			{
 				letterGrade = "E";
 			}
-			@ViewBag.Grade = "your numeric grade is: " + numericGrade + "<br>"+"your letter grade is: " + letterGrade;
+			@ViewBag.Grade = "your numeric grade is: " + numericGrade + "\n your letter grade is: " + letterGrade;
 			return View("FanMail");
 		}
 
