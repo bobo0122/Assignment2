@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Grade Calc";
+}
+
+
+@model Assignment2.Models.FanMailModel
+
+
+<body>
+
+    <p>Please enter all the grades within the scale of 1-100.</p>
+    <form method="post" onsubmit="return false">
+
+
+        <label>Assignments:</label>
+        <input id="Assignments" asp-for="Assignments" /> <br />
+        <label>Group Project:</label>
+        <input id="group" asp-for="Group" /><br />
+        <label>Quizzes:</label>
+        <input id="Quizzes" asp-for="Quizzes" /><br />
+        <label>Exams:</label>
+        <input id="Exams" asp-for="Exams" /><br />
+        <label>INTEX:</label>
+        <input id="INTEX" asp-for="INTEX" /><br />
+        <br />
+        <input type="submit" value="Calculate" id="submitButton" />
+
+
+    </form>
+    <div asp-validation-summary="All"></div>
+
+    <h4 id="grades">@ViewBag.Grade</h4>
+    <p id="numericGrade"></p>
+    <p id="letterGrade"></p>
+
+
+
+</body>
+
+

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/main.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <header>
+        <h1>@ViewBag.Title</h1>
+        <menu>
+            <ul>
+                <li><a asp.controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp.controller="Home" asp-action="FanMail">Fan Mail</a></li>
+            </ul>
+        </menu>
+
+    </header>
+    @RenderBody()
+
+    <footer>
+        Life is a party
+    </footer>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/message.js"></script>
+
+</body>
+</html>
