@@ -25,6 +25,7 @@ namespace Assignment2.Models
         [Range(1, 100, ErrorMessage = "Out of range")]
         public Double INTEX { get; set; }
         
+        
     }
         
    

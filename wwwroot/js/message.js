@@ -11,9 +11,9 @@ $('#Exams').keyup(calculate);
 $('#INTEX').keyup(calculate);*/
 
 
-	$("#submitButton").click(function () {
-
-
+$("#submitButton").click(
+	function handleForm(event){
+		event.preventDefault();
 
 		var numericGrade = $('#Assignments').val() * 0.5
 			+ $('#group').val() * 0.1
